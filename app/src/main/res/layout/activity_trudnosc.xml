@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="git_lab.colorcheck.Trudnosc">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:text="@string/difficult"
+            android:textSize="75px" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openGameNormal"
+            android:text="@string/DLnormal"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/bHard" />
+
+        <TextView
+            android:id="@+id/textViewNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button3"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="105dp"
+            android:layout_toStartOf="@+id/textView6"
+            android:text="@string/name"
+            android:textSize="55px" />
+
+        <EditText
+            android:id="@+id/editTextNicki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewNick"
+            android:layout_alignBottom="@+id/textViewNick"
+            android:layout_alignStart="@+id/textView6"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="16"
+            android:text="@string/Guest" />
+
+        <Button
+            android:id="@+id/bHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp"
+            android:onClick="openGameHard"
+            android:text="@string/DLHard" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
